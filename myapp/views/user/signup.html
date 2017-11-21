@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+</head>
+
+<body>
+
+<form action="/user/signup_result" method="post">
+<fieldset>
+<legend>注册信息:</legend>
+用户名:<br>
+<input type="text" name="username" >
+<br>
+密码:<br>
+<input type="password" name="user_passwd" >
+
+<br>
+个人介绍:<br>
+<input type="text" name="user_info"  style="width:170px;height:50px">
+<br><br>
+<input type="submit" value="注册" >
+</fieldset>
+</form>
+<p>产品名：{{.OEM}}--------------------版本号：{{.VER}} </p>
+</body>
+</html>

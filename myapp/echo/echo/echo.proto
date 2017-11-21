@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package helloworld;
+
+// The echo service definition.
+service Echo {
+  // Sends a message
+  rpc Send(EchoRequest) returns (EchoReplay) {}
+  rpc Push(Autoreply) returns (stream Autoreply) {}
+}
+
+
+
+// The request message 
+message EchoRequest {
+  string message = 1;
+}
+
+// The response message 
+message EchoReplay {
+  string message = 1;
+}
+
+// The time message 
+message Autoreply {
+  string message = 1;
+}
